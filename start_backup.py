@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-
 import ConfigParser
 import MySQLdb
 import os
@@ -94,7 +93,6 @@ def main():
     if auth_data['upload'] == 'true':
         today_backup = tar_all_backup(auth_data)
         upload_to_ftp(auth_data, today_backup)
-
 
 
 if __name__ == "__main__":
